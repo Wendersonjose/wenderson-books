@@ -1,3 +1,4 @@
+import './HeaderIcons.css';
 import Perfil from '../../assets/perfil.svg'
 import Sacola from '../../assets/sacola.svg'
 
