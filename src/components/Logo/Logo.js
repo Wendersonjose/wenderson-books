@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.svg'
 import styles from './styles.module.css'
 
-function Icons() {
+function Logo() {
   return (
     <div className={styles.logo}>
       <img
@@ -17,4 +17,4 @@ function Icons() {
   );
 }
 
-export default Icons
+export default Logo;

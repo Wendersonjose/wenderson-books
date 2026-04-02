@@ -1,14 +1,15 @@
 import './Header.css';
-const textoOpcoes = ['CATEGORIAS', 'FAVORITOS', ' MINHA ESTANTE']
+import Logo from '../Logo/Logo';
+import HeaderMenu from '../HeaderMenu/HeaderMenu';
+import HeaderIcons from '../HeaderIcons/HeaderIcons';
 
-
-function Header(){
+function Header() {
     return (
-        <ul className='opcoes'>
-          { textoOpcoes.map( (texto) => (
-            <li className='opcao'><p>{texto}</p></li>
-          ) ) }
-         </ul>
+        <header className='App-header'>
+          <Logo />
+         <HeaderMenu />
+         <HeaderIcons />
+        </header>
     )
 }
 

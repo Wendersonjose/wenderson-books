@@ -1,15 +1,7 @@
-.opcoes {
-    display: flex;
-}
-
-.opcao {
-    font-size: 16px;
+.App-header { 
+    background-color: #6495ED;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 0 5px;
-    cursor: pointer;
-    min-width: 120px;
-    
+    padding: 20px 0;
 }

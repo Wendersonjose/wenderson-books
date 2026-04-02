@@ -5,14 +5,14 @@ import Sacola from '../../assets/sacola.svg'
 const icones = [Perfil, Sacola]
 
 
- function Icons() {
+ function HeaderIcons() { 
     return (
  <ul className='icones'>
             { icones.map( (icone) => (
-              <li className='icone'><img src={icone}></img></li>
+              <li className='icone' key={icone}><img src={icone} alt='Ícone'></img></li> // key e alt adicionados
             )) }
         </ul>
     )
 }
 
-export default Icons;
+export default HeaderIcons; 

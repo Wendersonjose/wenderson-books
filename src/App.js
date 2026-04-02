@@ -1,20 +1,17 @@
 
 import './App.css';
-import Icons from './components/icons/icons';
-import Header from './components/header/Header';
-import HeaderIcons from './components/header/HeaderIcons';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <div className='App'>
-        <header className='App-header'>
-          <Icons />
-         <Header />
-         <HeaderIcons />
+      
+      <Header />
 
-        </header>
     </div>
   );
 }
 
 export default App;
+
