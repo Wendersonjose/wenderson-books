@@ -1,17 +1,27 @@
+import Header from "./components/Header/Header";
+import styled from "styled-components";
 
-import './App.css';
-import Header from './components/Header/Header';
-
+const AppContainer = styled.div`
+  
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+      circle,
+      rgba(176, 224, 230, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+  
+  li {
+    list-style: none;
+  }
+`;
 
 function App() {
   return (
-    <div className='App'>
-      
+    <AppContainer>
       <Header />
-
-    </div>
+    </AppContainer>
   );
 }
 
 export default App;
-

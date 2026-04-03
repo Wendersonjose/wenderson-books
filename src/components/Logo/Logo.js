@@ -1,19 +1,37 @@
 import logo from '../../assets/logo.svg'
-import styles from './styles.module.css'
+import styled from 'styled-components';
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
+const LogoImage = styled.img`
+  width: 100px;
+  height: auto;
+  background: transparent;
+`;
+
+const LogoName = styled.p`
+  font-size: 24px;
+  margin: 0;
+`;
+ 
+
 
 function Logo() {
   return (
-    <div className={styles.logo}>
-      <img
+    <LogoContainer>
+      <LogoImage
         src={logo}
         alt="Logo Wenderson Books"
-        className={styles.imageIcons}
       />
 
-      <p className={styles.nameIcons}>
+      <LogoName>
         <strong>Wenderson</strong> Books
-      </p>
-    </div>
+      </LogoName>
+    </LogoContainer>
   );
 }
 
