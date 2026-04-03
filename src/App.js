@@ -10,11 +10,7 @@ const AppContainer = styled.div`
       rgba(176, 224, 230, 1) 0%,
       rgba(148, 187, 233, 1) 100%
     );
-  
-  li {
-    list-style: none;
-  }
-`;
+    `
 
 function App() {
   return (
