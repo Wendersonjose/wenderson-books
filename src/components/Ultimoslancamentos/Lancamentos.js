@@ -1,5 +1,5 @@
-import { Lancamentos  } from "./DadosUltimosLancamentos";
-import  Titulo  from "../Titulos/Titulo";
+import { Lancamentos } from "./DadosUltimosLancamentos";
+import Titulo from "../Titulos/Titulo";
 import styled from "styled-components";
 
 const LancamentoContainer = styled.section`
@@ -61,19 +61,19 @@ const Livro = styled.div`
 `;
 
 function UltimosLancamentos() {
-    return (
-      <LancamentoContainer>
-        <Titulo cor="#000">Últimos Lançamentos</Titulo>
-        <Resultado>
-          {Lancamentos.map((lancamento) => (
-            <Livro key={lancamento.id}>
-              <img src={lancamento.src} alt={lancamento.nome} />
-              <p>{lancamento.nome}</p>
-            </Livro>
-          ))}
-        </Resultado>
-      </LancamentoContainer>
-    );
+  return (
+    <LancamentoContainer>
+      <Titulo cor="#000">Últimos Lançamentos</Titulo>
+      <Resultado>
+        {Lancamentos.map((lancamento) => (
+          <Livro key={lancamento.id}>
+            <img src={lancamento.src} alt={lancamento.nome} />
+            <p>{lancamento.nome}</p>
+          </Livro>
+        ))}
+      </Resultado>
+    </LancamentoContainer>
+  );
 }
 
 export default UltimosLancamentos;

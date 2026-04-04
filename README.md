@@ -27,7 +27,9 @@ Criar uma plataforma intuitiva onde desenvolvedores possam descobrir e explorar 
 
 - ✅ **Busca Inteligente**: Pesquise livros por título com busca case-insensitive ativada ao pressionar Enter
 - ✅ **Interface Responsiva**: Design adaptável para dispositivos móveis, tablets e desktops
-- ✅ **Última Lançamentos**: Seção dedicada aos livros mais recentes
+- ✅ **Últimos Lançamentos**: Seção dedicada aos livros mais recentes
+- ✅ **Livros Recomendados**: Seção especial com livros sobre arquitetura de software e microsserviços
+- ✅ **Cards Interativos**: Efeitos hover com elevação e sombras para melhor experiência visual
 - ✅ **Efeitos Interativos**: Hover states e animações suaves para melhor experiência do usuário
 - ✅ **PWA Ready**: Configurado como Progressive Web App para instalação em dispositivos
 - ✅ **SEO Otimizado**: Meta tags Open Graph e Twitter Cards para compartilhamento social
@@ -67,6 +69,11 @@ Criar uma plataforma intuitiva onde desenvolvedores possam descobrir e explorar 
 ![Resultados da busca de livros](./docs/images/homepesquisa.png)
 
 > Funcionalidade de busca em tempo real com resultados filtrados dinamicamente
+
+### 📚 Livros Recomendados
+![Seção de livros recomendados](./docs/images/livrosRecomendados.png)
+
+> Seção especial com livros sobre arquitetura de software, Domain-Driven Design e microsserviços
 
 ---
 
@@ -126,10 +133,17 @@ wenderson-books/
 │   │   ├── Input/          # Input reutilizável com estilo
 │   │   ├── Pesquisa/       # Componente de busca de livros
 │   │   ├── Titulos/        # Componentes de título reutilizáveis
-│   │   └── Ultimoslancamentos/ # Seção de últimos lançamentos
+│   │   ├── Ultimoslancamentos/ # Seção de últimos lançamentos
+│   │   └── CardRecomenda/  # Seção de livros recomendados
+│   │       ├── DadosRecomendacao.js  # Dados dos livros
+│   │       ├── CardLivro.js          # Card individual de livro
+│   │       └── LivrosRecomendacao.js # Componente principal
 │   ├── App.js              # Componente raiz
 │   ├── index.js            # Ponto de entrada com estilos globais
 │   └── assets/             # Imagens e recursos estáticos
+│       ├── livrosEstoque/
+│       ├── livroslancamentos/
+│       └── livrosRecomenda/ # Capas dos livros recomendados
 ├── package.json
 └── README.md
 ```
