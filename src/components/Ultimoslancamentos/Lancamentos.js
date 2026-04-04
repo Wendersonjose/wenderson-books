@@ -1,4 +1,5 @@
 import { Lancamentos  } from "./DadosUltimosLancamentos";
+import  Titulo  from "../Titulos/Titulo";
 import styled from "styled-components";
 
 const LancamentoContainer = styled.section`
@@ -15,27 +16,11 @@ const LancamentoContainer = styled.section`
   height: auto;
   width: 100%;
 `;
-const Titulo = styled.h2`
-  color: #fff;
-  font-size: clamp(28px, 5vw, 36px);
-  font-weight: 700;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-`;
-const Subtitulo = styled.h3`
-  font-size: clamp(14px, 2.5vw, 16px);
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  opacity: 0.95;
-`;
 
 const Resultado = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;{}
   gap: 24px;
   margin-top: 32px;
   padding: 0 16px;
@@ -78,7 +63,7 @@ const Livro = styled.div`
 function UltimosLancamentos() {
     return (
       <LancamentoContainer>
-        <Titulo>Últimos Lançamentos</Titulo>
+        <Titulo cor="#000">Últimos Lançamentos</Titulo>
         <Resultado>
           {Lancamentos.map((lancamento) => (
             <Livro key={lancamento.id}>
