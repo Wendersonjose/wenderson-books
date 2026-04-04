@@ -1,8 +1,8 @@
-import EntendendoAlgoritmos from '../../assets/Entendendo-algoritmos.jpg'
-import DominandoEstilosApis from '../../assets/Dominando-estilos-apis.jpg'
-import JavaScriptAssertivo from '../../assets/JavaScript-Assertivo.jpg'
-import CangaceiroEmJavaScript from '../../assets/Cangaceiro-em-JavaScript.jpg'
-import JavaScriptGuiaDefinitivo from '../../assets/JavaScript-O Guia-Definitivo.jpg' 
+import EntendendoAlgoritmos from '../../assets/livrosEstoque/Entendendo-algoritmos.jpg'
+import DominandoEstilosApis from '../../assets/livrosEstoque/Dominando-estilos-apis.jpg'
+import JavaScriptAssertivo from '../../assets/livrosEstoque/JavaScript-Assertivo.jpg'
+import CangaceiroEmJavaScript from '../../assets/livrosEstoque/Cangaceiro-em-JavaScript.jpg'
+import JavaScriptGuiaDefinitivo from '../../assets/livrosEstoque/JavaScript-O Guia-Definitivo.jpg' 
 
 
 export const livros = [
